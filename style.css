@@ -46,3 +46,43 @@ h4{
   border: 1px solid #eaeaea;
   padding: 10px 10px 10px 25px;
 }
+
+.circular-button {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 255, 0.25);
+  border: 2px solid rgba(0, 0, 255, 0.5);
+  border-radius: 50%;
+  animation: neon-glow-border 1s infinite; 
+  cursor: pointer;
+  padding: 0; 
+  outline: none; 
+}
+
+.arrow-head {
+  position: absolute;
+  top: 50%;
+  left: 55%; 
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid blue;
+  transform: translate(-50%, -50%) rotate(270deg);
+}
+
+@keyframes neon-glow-border {
+  0% {
+    border-color: rgba(0, 0, 255, 0.5);
+  }
+  50% {
+    border-color: rgba(0, 0, 255, 1);
+  }
+  100% {
+    border-color: rgba(0, 0, 255, 0.5);
+  }
+}
