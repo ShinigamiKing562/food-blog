@@ -23,6 +23,10 @@ h2 {
   padding: 13.5% 13.5% 13.5% 13.5%;
 }
 
+h3{
+  margin: 26px 0px 26px 0px;
+}
+
 hr{
   width: 80%;
   border-color: #fff;
@@ -42,12 +46,17 @@ h4{
   font-weight: lighter;
 }
 
+h5{
+  margin: 1px;
+}
+
 .tipslist{
   border: 1px solid #eaeaea;
   padding: 10px 10px 10px 25px;
+  font-size: 76%;
 }
 
-.circular-button {
+.circular-button-forward {
   position: fixed;
   top: 50%;
   right: 0;
@@ -63,7 +72,7 @@ h4{
   outline: none; 
 }
 
-.arrow-head {
+.arrow-head-forward {
   position: absolute;
   top: 50%;
   left: 55%; 
@@ -73,6 +82,34 @@ h4{
   border-right: 10px solid transparent;
   border-top: 10px solid blue;
   transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.circular-button-back {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 255, 0.25);
+  border: 2px solid rgba(0, 0, 255, 0.5);
+  border-radius: 50%;
+  animation: neon-glow-border 1s infinite; 
+  cursor: pointer;
+  padding: 0; 
+  outline: none; 
+}
+
+.arrow-head-back {
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid blue;
+  transform: translate(-50%, -50%) rotate(90deg);
 }
 
 @keyframes neon-glow-border {
