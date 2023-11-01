@@ -6,7 +6,7 @@ body {
 header {
    text-align: center;
    color: #424242;
-   background-image: url(/Multimedia\ files/back1.jpg);
+   background-image: url(https://raw.githubusercontent.com/ShinigamiKing562/food-blog/alt/Multimedia%20files/back1.jpg);
    background-size: 280%;
    margin: 0;
    padding: 0;
@@ -35,7 +35,7 @@ hr{
 main{
   text-align: left;
   font-size: 128%;
-  background-image: url(/Multimedia\ files/back2.jpg);
+  background-image: url(https://raw.githubusercontent.com/ShinigamiKing562/food-blog/alt/Multimedia%20files/back2.jpg);
   background-size: 200%;
   margin: 0;
   padding: 0;
